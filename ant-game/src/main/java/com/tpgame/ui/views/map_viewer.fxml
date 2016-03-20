@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.BorderPane?>
+<BorderPane fx:id="borderPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <center>
+        <Canvas fx:id="canvas" height="95.0" width="109.0" BorderPane.alignment="CENTER">
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </Canvas>
+    </center>
+</BorderPane>

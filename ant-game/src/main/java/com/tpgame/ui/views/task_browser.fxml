@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<BorderPane fx:id="borderPane" prefHeight="391.0" prefWidth="589.0" xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml/1">
+    <center>
+        <Pane prefHeight="460.0" prefWidth="609.0">
+            <children>
+                <GridPane hgap="10.0" layoutX="11.0" layoutY="15.0" prefHeight="350.0" prefWidth="549.0" vgap="10.0"
+                          BorderPane.alignment="CENTER">
+                    <columnConstraints>
+                        <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" percentWidth="19.0"
+                                           prefWidth="100.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" percentHeight="62.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                        <RowConstraints minHeight="10.0" percentHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                        <RowConstraints minHeight="10.0" percentHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                    </rowConstraints>
+                    <children>
+                        <Label text="Level:" GridPane.rowIndex="1"/>
+                        <ComboBox fx:id="levelComboBox" prefHeight="25.0" prefWidth="59.0" GridPane.columnIndex="1"
+                                  GridPane.rowIndex="1"/>
+                        <HBox alignment="BOTTOM_RIGHT" prefHeight="79.0" prefWidth="350.0" GridPane.columnIndex="1"
+                              GridPane.rowIndex="3">
+                            <children>
+                                <Button fx:id="cancelBtn" mnemonicParsing="false" text="ОТМЕНА">
+                                    <HBox.margin>
+                                        <Insets right="10.0"/>
+                                    </HBox.margin>
+                                </Button>
+                                <Button fx:id="okBtn" mnemonicParsing="false" text="ОК"/>
+                            </children>
+                        </HBox>
+                        <Label text="Problem:" GridPane.rowIndex="2"/>
+                        <Label text="Preview:"/>
+                        <BorderPane prefHeight="0.0" prefWidth="436.0"
+                                    style="-fx-background-color: #7DA3EB; -fx-border-color: #999999;"
+                                    GridPane.columnIndex="1">
+                            <center>
+                                <ImageView fx:id="previewImage" fitHeight="209.0" fitWidth="279.0" pickOnBounds="true"
+                                           preserveRatio="true" BorderPane.alignment="CENTER">
+                                    <BorderPane.margin>
+                                        <Insets/>
+                                    </BorderPane.margin>
+                                </ImageView>
+                            </center>
+                            <GridPane.margin>
+                                <Insets bottom="10.0" top="10.0"/>
+                            </GridPane.margin>
+                        </BorderPane>
+                        <ComboBox fx:id="taskComboBox" prefHeight="25.0" prefWidth="439.0" promptText="Choose problem"
+                                  GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+                    </children>
+                    <opaqueInsets>
+                        <Insets/>
+                    </opaqueInsets>
+                </GridPane>
+            </children>
+        </Pane>
+    </center>
+</BorderPane>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<VBox fx:id="rootVBox" prefHeight="650.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8"
+      xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <MenuBar VBox.vgrow="NEVER">
+            <menus>
+                <Menu fx:id="fileMenu" mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem fx:id="fileMenuChooseProblem" mnemonicParsing="false" text="Choose Problem"/>
+                        <SeparatorMenuItem mnemonicParsing="false"/>
+                        <MenuItem fx:id="fileMenuLoadCode" mnemonicParsing="false" text="Load Code"/>
+                        <MenuItem fx:id="fileMenuSaveCode" mnemonicParsing="false" text="Save Code"/>
+                        <SeparatorMenuItem mnemonicParsing="false"/>
+                        <MenuItem fx:id="fileMenuShowProblem" mnemonicParsing="false" text="Show Problem"/>
+                    </items>
+                </Menu>
+                <Menu fx:id="changeUserMenu" mnemonicParsing="false" text="Change User Mode"/>
+                <Menu fx:id="helpMenu" mnemonicParsing="false" text="Help"/>
+            </menus>
+        </MenuBar>
+        <StackPane fx:id="stackPane" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #bbbbbb;"
+                   VBox.vgrow="ALWAYS">
+            <children>
+                <Label text="ANT GAME" textFill="#8d8d8d">
+                    <font>
+                        <Font name="System Bold" size="64.0"/>
+                    </font>
+                </Label>
+            </children>
+        </StackPane>
+    </children>
+</VBox>
