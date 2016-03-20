@@ -29,5 +29,3 @@ Below are ingame screenshots so you could see what it looks like.
 ![2](https://cloud.githubusercontent.com/assets/9255940/13907054/d19fa690-eefe-11e5-8365-104209ffe56d.jpg)
 ###### Image 3. Welcome window
 ![3](https://cloud.githubusercontent.com/assets/9255940/13907055/d788e238-eefe-11e5-8e53-8006629d7af1.JPG)
-###### Image 4. Map Browser
-![4](https://cloud.githubusercontent.com/assets/9255940/13907056/d8d447fe-eefe-11e5-8c50-2da8366d81a7.JPG)
